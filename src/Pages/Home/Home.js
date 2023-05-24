@@ -14,7 +14,7 @@ const Home = () => {
         <FourCate />
         <BestSeller />
         <div className="bg-[#F2F3F5] lg:py-44 py-20">
-          <h1 className="text-center text-2xl font-bold text-[#121212]">
+          <h1 className="text-center text-4xl font-bold text-[#121212]">
             Customer Review
           </h1>
           <div className="lg:w-4/12 mx-auto px-2 lg:px-0">

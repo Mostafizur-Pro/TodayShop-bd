@@ -19,9 +19,10 @@ const BestProductsCard = ({ best }) => {
       data-aos-duration="1200"
     >
       <aside className="relative">
-        <img src={best?.img} alt="" />
+        <img className="h-72" src={best?.img} alt="" />
+
         <div className="absolute top-3 right-3 visibleText duration-300 cursor-pointer">
-          <div className="flex flex-row-reverse">
+          <div className="flex flex-row-reverse gap-7">
             <div onClick={() => wishlistBooking(best)} className="px-1">
               <IconContext.Provider value={{ size: 23, color: "#ABADAF" }}>
                 <RiHeart2Line />

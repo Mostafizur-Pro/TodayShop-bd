@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Cover1 from "../images/Rectangle_168.jpg";
+import Cover1 from "../images/coverbanner.jpg";
 import "./HomeCover.css";
 
 const HomeCover = () => {
@@ -11,7 +11,7 @@ const HomeCover = () => {
         <div className="absolute inset-0 bg-black/10 bg-gradient-to-t"></div>
         <div className="absolute top-[30%] w-full">
           <div className="container space-y-7 mx-auto">
-            <h1 className="text-xl font-Josefin font-semibold capitalize text-[#121212]">
+            <h1 className="text-2xl font-Josefin font-semibold capitalize text-[#121212]">
               FASHION GUIDE
             </h1>
             <h1
@@ -24,7 +24,7 @@ const HomeCover = () => {
             </h1>
 
             <p
-              className="text-[18px] text-slate-500 font-Poppins leading-10 pb-12"
+              className="text-[18px] font-Poppins leading-10 pb-12"
               data-aos="fade-left"
               data-aos-anchor="#example-anchor"
               data-aos-offset="500"
@@ -59,7 +59,7 @@ const HomeCover = () => {
                   </svg>
                 </span>
 
-                <span className="text-[13px] uppercase tracking-widest font-Libre font-medium transition-all group-hover:mr-4">
+                <span className="text-2xl uppercase tracking-widest font-Libre font-medium transition-all group-hover:mr-4">
                   Shop Now
                 </span>
               </h1>

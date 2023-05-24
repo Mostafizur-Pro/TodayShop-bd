@@ -11,10 +11,14 @@ const BestSeller = () => {
 
   useEffect(() => {
     axios
-      .get("https://shop-ex-server-one.vercel.app/best-products")
+      // .get("https://shop-ex-server-one.vercel.app/best-products")
+      .get("bestproducts.json")
       .then((res) => setBestProductsData(res.data))
       .catch((error) => console.log(error));
   }, []);
+
+  console.log("bestProductsData", bestProductsData);
+
   return (
     <>
       <div className="py-28">

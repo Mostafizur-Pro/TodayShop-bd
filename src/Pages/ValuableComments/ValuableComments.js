@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -6,10 +6,20 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { useContext } from "react";
 import { AuthContext } from "../../Context/UserContext";
+import axios from "axios";
 
 export default function CommentsCard() {
-  const { comments } = useContext(AuthContext);
+  // const { comments } = useContext(AuthContext);
   // console.log(comments);
+  const [comments, setComments] = useState([]);
+
+  useEffect(() => {
+    axios
+
+      .get("comments.json")
+      .then((res) => setComments(res.data))
+      .catch((error) => console.log(error));
+  }, []);
   return (
     <>
       <Swiper
@@ -30,25 +40,25 @@ export default function CommentsCard() {
           <SwiperSlide key={inx}>
             <div className="">
               <div className="">
-                <p className="text-center py-5">
+                <p className="text-center text-2xl py-5">
                   {comment?.comments.slice(0, 140)}
                 </p>
 
                 <div className="flex justify-center items-center space-x-2">
                   <aside>
                     <img
-                      className="w-10 h-10 rounded-full"
+                      className="w-16 h-16 rounded-full"
                       src={comment?.image}
                       alt=""
                     />
                   </aside>
                   <aside>
-                    <h1>{comment?.name}</h1>
+                    <h1 className="text-4xl font-bold">{comment?.name}</h1>
                     <div className="flex items-center">
                       {" "}
                       <svg
                         aria-hidden="true"
-                        className="w-4 h-4 text-green-600"
+                        className="w-6 h-6 text-green-600 "
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +68,7 @@ export default function CommentsCard() {
                       </svg>
                       <svg
                         aria-hidden="true"
-                        className="w-4 h-4 text-green-600"
+                        className="w-6 h-6 text-green-600 "
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +78,7 @@ export default function CommentsCard() {
                       </svg>
                       <svg
                         aria-hidden="true"
-                        className="w-4 h-4 text-green-600"
+                        className="w-6 h-6 text-green-600 "
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +88,7 @@ export default function CommentsCard() {
                       </svg>
                       <svg
                         aria-hidden="true"
-                        className="w-4 h-4 text-green-600"
+                        className="w-6 h-6 text-green-600 "
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +98,7 @@ export default function CommentsCard() {
                       </svg>
                       <svg
                         aria-hidden="true"
-                        className="w-4 h-4 text-gray-300 dark:text-gray-500"
+                        className="w-6 h-6 text-gray-300 dark:text-gray-500"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"

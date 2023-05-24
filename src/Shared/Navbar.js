@@ -432,7 +432,9 @@ const Navbar = () => {
                 className="lg:text-4xl text-[20px] font-Josefin font-extralight"
                 to="/"
               >
-                <p className="pt-1">𝒯oday𝒮hop-BD</p>
+                <p className="pt-1 font-bold">
+                  <span className="text-rose-600">▀▄▀▄</span>TodayShop
+                </p>
               </Link>
             </div>
 
