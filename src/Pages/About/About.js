@@ -1,7 +1,8 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { IoLogoInstagram } from "react-icons/io";
-import { RiFacebookLine, RiLinkedinLine, RiTwitterLine } from "react-icons/ri";
+import { RiFacebookLine, RiLinkedinLine } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
 
 const About = () => {
   return (
@@ -53,7 +54,7 @@ const About = () => {
               </aside>
 
               <div className="text-black lg:text-[18px]">
-                <h1 className="font-Libre">Naogaon, Bangladesh</h1>
+                <h1 className="font-Libre">Dhamrai, Bangladesh</h1>
                 <p className="font-Libre">mostafizur0195@gmail.com</p>
                 <p className="font-Libre">+880 1950 165017</p>
               </div>
@@ -70,7 +71,7 @@ const About = () => {
               <div className="flex items-center space-x-5">
                 <a
                   target="_blank"
-                  href="https://www.facebook.com/moniru.pro"
+                  href="https://www.facebook.com/mostafizur.proo/"
                   rel="noreferrer"
                 >
                   <aside className="bg-gray-300 w-8 h-8 rounded-full flex items-center justify-center">
@@ -83,7 +84,7 @@ const About = () => {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/m_monirull/"
+                  href="https://www.instagram.com/mostafizur_pro/"
                   rel="noreferrer"
                 >
                   <div className="bg-gray-300 w-8 h-8 rounded-full flex items-center justify-center">
@@ -96,7 +97,7 @@ const About = () => {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/in/monirul99/"
+                  href="https://www.linkedin.com/in/mostafizur-pro/"
                   rel="noreferrer"
                 >
                   <div className="bg-gray-300 w-8 h-8 rounded-full flex items-center justify-center">
@@ -110,14 +111,14 @@ const About = () => {
 
                 <a
                   target="_blank"
-                  href="https://twitter.com/MsMonirul"
+                  href="https://mostafizur-pro.web.app/"
                   rel="noreferrer"
                 >
                   <div className="bg-gray-300 w-8 h-8 rounded-full flex items-center justify-center">
                     <IconContext.Provider
                       value={{ size: 17, color: "#00acee " }}
                     >
-                      <RiTwitterLine />
+                      <CgProfile />
                     </IconContext.Provider>
                   </div>
                 </a>
@@ -128,7 +129,7 @@ const About = () => {
             <div className="border rounded-full p-7">
               <img
                 className="rounded-full border"
-                src="https://res.cloudinary.com/dr4o1qswz/image/upload/v1656317686/Owner%20Img/IMG_0509_ztum36.jpg"
+                src="https://i.ibb.co/10KF4fy/01.jpg"
                 alt=""
               />
             </div>
